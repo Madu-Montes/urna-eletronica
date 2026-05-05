@@ -11,7 +11,15 @@ const candidatos = [
     },
     {
         nome: "Vilma",
-        numero: 71,
+        numero: 88,
         foto: "./assets/vilma.svg"
     }
 ]
+
+let primeiroNumero = "3";
+
+let segundoNumero = "1";
+
+let numeroDigitado = primeiroNumero + segundoNumero;
+
+let candidatoSelecionado = candidatos.find(candidato => candidato.numero == "31")
