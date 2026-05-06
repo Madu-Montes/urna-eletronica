@@ -16,10 +16,15 @@ const candidatos = [
     }
 ]
 
-let primeiroNumero = "3";
+let numeroDigitado = "";
 
-let segundoNumero = "1";
+function digitarNumero(numero) {
+    numeroDigitado += numero
 
-let numeroDigitado = primeiroNumero + segundoNumero;
+    if (numeroDigitado.length == 2) {
+        console.log("numeroDigitado:", numeroDigitado)
+        let candidatoSelecionado = candidatos.find(candidato => candidato.numero === Number(numeroDigitado))
+        console.log(candidatoSelecionado)
+    }
 
-let candidatoSelecionado = candidatos.find(candidato => candidato.numero == "31")
+}
