@@ -7,7 +7,7 @@ const candidatos = [
     {
         nome: "Bolsonaldo",
         numero: 71,
-        foto: "./assets/bolsonado.svg"
+        foto: "./assets/bolsonaldo.svg"
     },
     {
         nome: "Vilma",
@@ -22,9 +22,16 @@ function digitarNumero(numero) {
     numeroDigitado += numero
 
     if (numeroDigitado.length == 2) {
-        console.log("numeroDigitado:", numeroDigitado)
-        let candidatoSelecionado = candidatos.find(candidato => candidato.numero === Number(numeroDigitado))
-        console.log(candidatoSelecionado)
+        console.log("numeroDigitado:", numeroDigitado);
+        let candidatoSelecionado = candidatos.find(candidato => candidato.numero === Number(numeroDigitado));
+
+        console.log(candidatoSelecionado);
+
+        document.getElementById("numero").innerHTML = candidatoSelecionado.numero;
+
+        document.getElementById("foto").src = candidatoSelecionado.foto;
+
+        document.getElementById("nome").innerHTML = candidatoSelecionado.nome;
     }
 
 }

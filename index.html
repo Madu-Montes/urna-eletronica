@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Urna eletrônica</title>
 </head>
+
 <body>
-    <button onclick="digitarNumero(0)">0</button>
-    <button onclick="digitarNumero(1)">1</button>
-    <button onclick="digitarNumero(2)">2</button>
-    <button onclick="digitarNumero(3)">3</button>
-    <button onclick="digitarNumero(4)">4</button>
-    <button onclick="digitarNumero(5)">5</button>
-    <button onclick="digitarNumero(6)">6</button>
-    <button onclick="digitarNumero(7)">7</button>
-    <button onclick="digitarNumero(8)">8</button>
-    <button onclick="digitarNumero(9)">9</button>
+    <div class="container">
+
+        <div class="screen">
+            <img id="background-img" src="./assets/banner_justica_eleitoral.svg" alt="">
+            <div class="infos">
+                <div>
+                    <span id="numero"></span>
+                </div>
+                <div>
+                    <img id="foto" src="">
+                    <span id="nome"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="painel-btns">
+            <button onclick="digitarNumero(0)">0</button>
+            <button onclick="digitarNumero(1)">1</button>
+            <button onclick="digitarNumero(2)">2</button>
+            <button onclick="digitarNumero(3)">3</button>
+            <button onclick="digitarNumero(4)">4</button>
+            <button onclick="digitarNumero(5)">5</button>
+            <button onclick="digitarNumero(6)">6</button>
+            <button onclick="digitarNumero(7)">7</button>
+            <button onclick="digitarNumero(8)">8</button>
+            <button onclick="digitarNumero(9)">9</button>
+        </div>
+    </div>
+
 </body>
 <script src="./script/script.js"></script>
+
 </html>
